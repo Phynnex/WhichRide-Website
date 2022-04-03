@@ -77,7 +77,7 @@ export const StepThree = styled.div`
   margin: auto 0;
 `;
 
-export const StepText = styled.p`
+export const StepBackground = styled.div`
   font-family: "Cera Pro";
   font-style: normal;
   font-weight: 400;
@@ -87,6 +87,10 @@ export const StepText = styled.p`
   letter-spacing: -0.01em;
   color: #000000;
 `;
+
+export const StepText = styled.p`
+  padding-top: 20px;
+`
 
 export const StepTextDiv = styled.div`
   display:flex;
