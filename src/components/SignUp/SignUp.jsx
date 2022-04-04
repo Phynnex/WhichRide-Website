@@ -19,11 +19,11 @@ const SignUp = () => {
           Sign up to our mailing list to find out more information and keep up
           to date about our activities
         </SignUpText>
-        <InputDiv>
-          <Input type="email" id="email" placeholder="Email" />
-          <SubscribeBtn>Subscribe</SubscribeBtn>
-        </InputDiv>
       </Sub>
+      <InputDiv>
+        <Input type="email" id="email" placeholder="Email" color="#fff"/>
+        <SubscribeBtn shouldHover={true}>Subscribe</SubscribeBtn>
+      </InputDiv>
     </SignUpContainer>
   );
 }

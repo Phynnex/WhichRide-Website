@@ -3,6 +3,7 @@ import React from "react";
 import {
   MainContainer,
   WhyHeading,
+  SubContainer,
   SubContainer1,
   SubContainer2,
   Container,
@@ -24,58 +25,60 @@ const Why = () => {
       <MainContainer>
         <WhyHeading>Why Whichride</WhyHeading>
         <Container>
-          <SubContainer1>
-            <InnerContainer>
-              <WhyIcon>
-                <img src={MoreChoices1} alt="choice" />
-              </WhyIcon>
-              <WhySubHeading>More choices</WhySubHeading>
-              <WhyPara>
-                WhichRide lets you compare pricing across the major rideshares
-                so you can save money on every ride.
-              </WhyPara>
-            </InnerContainer>
-            <InnerContainer>
-              <WhyIcon>
-                <img src={MoreChoices} alt="choice" />
-              </WhyIcon>
-              <WhySubHeading>More choices</WhySubHeading>
-              <WhyPara>
-                WhichRide lets you compare pricing across the major rideshares
-                so you can save money on every ride.
-              </WhyPara>
-            </InnerContainer>
-          </SubContainer1>
-          <SubContainer2>
-            <InnerContainer>
-              <WhyIcon>
-                <ChoiceBackground>
-                  <div style={{ padding: "14px 16px" }}>
-                    <img src={Vector} alt="choice" />
-                  </div>
-                </ChoiceBackground>
-              </WhyIcon>
-              <WhySubHeading>More choices</WhySubHeading>
-              <WhyPara>
-                WhichRide lets you compare pricing across the major rideshares
-                so you can save money on every ride.
-              </WhyPara>
-            </InnerContainer>
-            <InnerContainer>
-              <WhyIcon>
-                <ChoiceBackground2>
-                  <div style={{ padding: "12px" }}>
-                    <AiOutlineSafety size='40' color='#fff' />
-                  </div>
-                </ChoiceBackground2>
-              </WhyIcon>
-              <WhySubHeading>Safety first</WhySubHeading>
-              <WhyPara>
-                WhichRide lets you compare pricing across the major rideshares
-                so you can save money on every ride.
-              </WhyPara>
-            </InnerContainer>
-          </SubContainer2>
+          <SubContainer>
+            <SubContainer1>
+              <InnerContainer>
+                <WhyIcon>
+                  <img src={MoreChoices1} alt="choice" />
+                </WhyIcon>
+                <WhySubHeading>More choices</WhySubHeading>
+                <WhyPara>
+                  WhichRide lets you compare pricing across the major rideshares
+                  so you can save money on every ride.
+                </WhyPara>
+              </InnerContainer>
+              <InnerContainer>
+                <WhyIcon>
+                  <img src={MoreChoices} alt="choice" />
+                </WhyIcon>
+                <WhySubHeading>More choices</WhySubHeading>
+                <WhyPara>
+                  WhichRide lets you compare pricing across the major rideshares
+                  so you can save money on every ride.
+                </WhyPara>
+              </InnerContainer>
+            </SubContainer1>
+            <SubContainer2>
+              <InnerContainer>
+                <WhyIcon>
+                  <ChoiceBackground>
+                    <div style={{ padding: "14px 16px" }}>
+                      <img src={Vector} alt="choice" />
+                    </div>
+                  </ChoiceBackground>
+                </WhyIcon>
+                <WhySubHeading>More choices</WhySubHeading>
+                <WhyPara>
+                  WhichRide lets you compare pricing across the major rideshares
+                  so you can save money on every ride.
+                </WhyPara>
+              </InnerContainer>
+              <InnerContainer>
+                <WhyIcon>
+                  <ChoiceBackground2>
+                    <div style={{ padding: "12px" }}>
+                      <AiOutlineSafety size="40" color="#fff" />
+                    </div>
+                  </ChoiceBackground2>
+                </WhyIcon>
+                <WhySubHeading>Safety first</WhySubHeading>
+                <WhyPara>
+                  WhichRide lets you compare pricing across the major rideshares
+                  so you can save money on every ride.
+                </WhyPara>
+              </InnerContainer>
+            </SubContainer2>
+          </SubContainer>
         </Container>
       </MainContainer>
     </>

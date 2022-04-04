@@ -15,6 +15,8 @@ import {
   StepHeader,
   StepPara,
   StepBackground,
+  Container,
+  AboutImg,
 } from "./style";
 import Phone from "../../assets/Phone.svg";
 
@@ -23,21 +25,21 @@ const About = () => {
     <>
       <AboutContainer>
         <AboutHeading>
-          <AboutHeader>
-            Whichride brings together multiple
-            <br /> ride hailing providers and local taxi
-            <br /> firms in one app
-          </AboutHeader>
-          <AboutSubHeader>
-            Allowing riders to select the provider that offers the <br /> best
-            price, service or travel time, then seamlessly
-            <br /> book within the app
-          </AboutSubHeader>
+            <AboutHeader>
+              Whichride brings together multiple
+              <br /> ride hailing providers and local taxi
+              <br /> firms in one app
+            </AboutHeader>
+            <AboutSubHeader>
+              Allowing riders to select the provider that offers the <br /> best
+              price, service or travel time, then seamlessly
+              <br /> book within the app
+            </AboutSubHeader>
         </AboutHeading>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <div className="image">
+        <Container>
+          <AboutImg>
             <img src={Phone} alt="phone" />
-          </div>
+          </AboutImg>
 
           <StepsContainer>
             <Steps>
@@ -90,7 +92,7 @@ const About = () => {
               </StepsDiv>
             </Steps>
           </StepsContainer>
-        </div>
+        </Container>
       </AboutContainer>
     </>
   );

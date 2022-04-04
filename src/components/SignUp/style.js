@@ -1,15 +1,21 @@
 import styled from "styled-components/macro";
+import media from "../../media";
+
 
 export const SignUpContainer = styled.div`
   background: #f2c94c;
   padding: 94px;
-  
+  ${media.mobile`
+    padding:75px;
+  `}
 `;
-
 
 export const Sub = styled.div`
   width: 500px;
   margin: 0 auto;
+  ${media.mobile`
+    width:90%;
+    `}
 `;
 export const SignUpHeading = styled.p`
   font-family: "Cera Pro";
@@ -21,7 +27,6 @@ export const SignUpHeading = styled.p`
   color: #232c35;
   text-align: center;
   margin-bottom: 20px;
-
 `;
 
 export const SignUpText = styled.p`
@@ -37,17 +42,21 @@ export const SignUpText = styled.p`
 `;
 
 export const InputDiv = styled.div`
-  display:flex;
-  justify-content:center;
-`
+  display: flex;
+  justify-content: center;
+  ${media.mobile`
+    width:100%;
+    `}
+`;
 export const Input = styled.input`
   border: 2px solid #ffffff;
   box-sizing: border-box;
   background: #f2c94c;
   padding: 1rem 2.4rem;
   border-radius: 3px;
+  color: #fff;
 `;
-export const SubscribeBtn = styled.button`
+export const SubscribeBtn = styled.button`  
   font-family: "Brown";
   font-size: 16px;
   line-height: 12px;
@@ -65,4 +74,9 @@ export const SubscribeBtn = styled.button`
   background: #2c3539;
   cursor: pointer;
   margin: 0rem 1rem;
+  &:hover {
+    background: ${(props) => (props.shouldHover ? "none" : "none")};
+    border: ${(props) => (props.shouldHover ? "2px solid #000" : "none")};
+    color: ${(props) => (props.shouldHover ? "#000" : "none")};
+  }
 `;

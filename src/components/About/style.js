@@ -1,15 +1,27 @@
 import styled from "styled-components/macro";
+import media from "../../media";
+
 
 export const AboutContainer = styled.div`
-  background: #5C1A8D;
+  background: #5c1a8d;
   margin-top: -58px;
+  ${media.mobile`
+    margin-top: -58px;
+  `}
 `;
 
 export const AboutHeading = styled.div`
-  width: 614px;
-  margin: 0 auto;
-  padding 100px 0 60px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  padding 90px 0 60px;
+  ${media.mobile`
+     padding 60px 0px 0px;
+
+  `}
+  
 `;
+
 export const AboutHeader = styled.p`
   text-align: center;
   font-family: "Cera Pro";
@@ -17,9 +29,11 @@ export const AboutHeader = styled.p`
   font-weight: 700;
   font-size: 36px;
   line-height: 112.5%;
-  text-align: center;
   letter-spacing: -0.01em;
   color: #ffffff;
+  ${media.mobile`
+   font-size: 28px;
+  `}
 `;
 
 export const AboutSubHeader = styled.p`
@@ -32,18 +46,39 @@ export const AboutSubHeader = styled.p`
   letter-spacing: -0.01em;
   color: #e0e0e0;
   margin-top: 32px;
+  ${media.mobile`
+   font-size: 16px;
+  `}
 `;
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  ${media.mobile`
+    flex-direction: column;
+  `}
+`;
+
+export const AboutImg = styled.div`
+  ${media.mobile`
+    display: flex;
+    justify-content: center;
+  `}
+`;
 export const StepsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 `;
 
 export const Steps = styled.div`
   display: flex;
   flex-direction: column;
+  ${media.mobile`
+    margin: 0rem 2rem;
+  `}
 `;
 
 export const StepsDiv = styled.div`

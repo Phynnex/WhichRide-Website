@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           <button className="hero-btn">Launching Soon</button>
         </div>
-        <div>
+        <div className='img-container'>
           <img
             src={HeroImage}
             alt="hero"
