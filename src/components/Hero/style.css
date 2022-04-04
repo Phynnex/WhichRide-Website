@@ -15,8 +15,8 @@
 }
 
 .hero-heading{
-  font-family: 'Cera Pro';
-  font-style: normal;
+  font-family: 'lora';
+  font-style: bold;
   font-weight: 700;
   font-size: 48px;
   line-height: 53px;
@@ -25,7 +25,7 @@
 }
 
 .hero-paragraph {
-  font-family: 'Cera Pro';
+  font-family: 'lora';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -65,24 +65,39 @@
 
   .hero-container {
     flex-direction: column-reverse;
-  }
-
-  .img-container {
-    display: flex;
+    align-items: center;
     justify-content: center;
-
+    width:100%;
   }
+
+  
   .hero-img{
-    width: 400px;
+    width: 100%;
+    max-width: 340px;
   }
 
   .hero-text{
-
+    width: 90%;
     margin: -40px 0px 100px;
+  }
+
+  .hero-heading {
+    margin: auto 0;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+
   }
 
   .hero-paragraph{
     text-align: center;
+    margin: auto 0;
+    margin-bottom: 30px;
+
+  }
+
+  .hero-btn{
+    margin: auto 0;
   }
   
 }

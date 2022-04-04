@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
 `;
 
 export const WhyHeading = styled.div`
-  font-family: "Cera Pro";
+  font-family: "lora";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -71,7 +71,7 @@ export const WhyIcon = styled.div`
   `}
 `;
 export const WhySubHeading = styled.p`
-  font-family: "Cera Pro";
+  font-family: "lora";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -85,7 +85,7 @@ export const WhySubHeading = styled.p`
 `;
 
 export const WhyPara = styled.p`
-  font-family: "Cera Pro";
+  font-family: "lora";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

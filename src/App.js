@@ -16,8 +16,8 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/" component={TheApp} />
-            <Route path="/" component={AboutUs} />
-            <Route path="/" component={GetInTouch} />
+            <Route path="/about-us" component={AboutUs} />
+            <Route path="/contact" component={GetInTouch} />
             
           </Switch>
         </div>

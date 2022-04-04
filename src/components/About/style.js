@@ -33,6 +33,8 @@ export const AboutHeader = styled.p`
   color: #ffffff;
   ${media.mobile`
    font-size: 28px;
+   margin: 32px 28px 0;
+
   `}
 `;
 
@@ -48,6 +50,8 @@ export const AboutSubHeader = styled.p`
   margin-top: 32px;
   ${media.mobile`
    font-size: 16px;
+   margin: 32px 28px 0;
+
   `}
 `;
 
@@ -77,16 +81,22 @@ export const Steps = styled.div`
   display: flex;
   flex-direction: column;
   ${media.mobile`
-    margin: 0rem 2rem;
+    // padding: 0rem 2rem;
   `}
 `;
 
 export const StepsDiv = styled.div`
   width: 420px;
   display: grid;
-  grid-template-columns: 100px 400px ;
+  grid-template-columns: 100px 400px;
   grid-gap: 10px;
   margin-bottom: 45px;
+  ${media.mobile`
+    width:100%;
+    grid-template-columns: 100px 200px;
+
+    grid-gap: 0px;
+  `}
 `;
 export const StepOne = styled.div`
   width: 59px;
